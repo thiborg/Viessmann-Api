@@ -94,6 +94,7 @@ final class ViessmannFeature
     const HEATING_CIRCUITS_1_SENSORS_TEMPERATURE = "heating.circuits.1.sensors.temperature";
     const HEATING_CIRCUITS_1_SENSORS_TEMPERATURE_SUPPLY = "heating.circuits.1.sensors.temperature.supply";
     const HEATING_PRIMARYCIRCUIT_SENSORS_TEMPERATURE_SUPPLY = "heating.primaryCircuit.sensors.temperature.supply";
+    const HEATING_PRIMARYCIRCUIT_SENSORS_TEMPERATURE_RETURN = "heating.primaryCircuit.sensors.temperature.return";
     const HEATING_SECONDARYCIRCUIT_SENSORS_TEMPERATURE_SUPPLY = "heating.secondaryCircuit.sensors.temperature.supply";
     const HEATING_SECONDARYCIRCUIT_SENSORS_TEMPERATURE_RETURN = "heating.secondaryCircuit.sensors.temperature.return";
     const HEATING_CIRCUITS_1 = "heating.circuits.1";
@@ -110,6 +111,8 @@ final class ViessmannFeature
     const HEATING_DHW_SCHEDULE = "heating.dhw.schedule";
     const HEATING_DHW_SENSORS = "heating.dhw.sensors";
     const HEATING_DHW_SENSORS_TEMPERATURE_HOTWATERSTORAGE = "heating.dhw.sensors.temperature.hotWaterStorage";
+    const HEATING_DHW_SENSORS_TEMPERATURE_HOTWATERSTORAGE_TOP = "heating.dhw.sensors.temperature.hotWaterStorage.top";
+    const HEATING_DHW_SENSORS_TEMPERATURE_HOTWATERSTORAGE_BOTTOM = "heating.dhw.sensors.temperature.hotWaterStorage.bottom";
     const HEATING_DHW_SENSORS_TEMPERATURE_OUTLET = "heating.dhw.sensors.temperature.outlet";
     const HEATING_DHW = "heating.dhw";
     const HEATING_DHW_TEMPERATURE = "heating.dhw.temperature";
