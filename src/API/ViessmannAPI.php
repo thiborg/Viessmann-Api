@@ -317,6 +317,16 @@ final class ViessmannAPI
     {
         return $this->viessmannFeatureProxy->getEntity(ViessmannFeature::HEATING_PRIMARYCIRCUIT_SENSORS_TEMPERATURE_SUPPLY)->getProperty("value")["value"];
     }
+    
+    /**
+     * @return float the result for primary circuit sensor Temperature return
+     * @throws ViessmannApiException
+     */
+    public
+    function getHeatingPrimaryCircuitTemperatureReturn(): float
+    {
+        return $this->viessmannFeatureProxy->getEntity(ViessmannFeature::HEATING_PRIMARYCIRCUIT_SENSORS_TEMPERATURE_RETURN)->getProperty("value")["value"];
+    }
 
     /**
      * @return float the result for secondary circuit sensor Temperature supply
@@ -649,6 +659,28 @@ final class ViessmannAPI
     function getHotWaterStorageTemperature($circuitId = NULL): string
     {
         return $this->viessmannFeatureProxy->getEntity(ViessmannFeature::HEATING_DHW_SENSORS_TEMPERATURE_HOTWATERSTORAGE)->getProperty("value")["value"];
+    }
+    
+    /**
+     * @param null $circuitId
+     * @return string Hot Water storage temperature top
+     * @throws ViessmannApiException
+     */
+    public
+    function getHotWaterStorageTemperatureTop($circuitId = NULL): string
+    {
+        return $this->viessmannFeatureProxy->getEntity(ViessmannFeature::HEATING_DHW_SENSORS_TEMPERATURE_HOTWATERSTORAGE_TOP)->getProperty("value")["value"];
+    }
+    
+        /**
+     * @param null $circuitId
+     * @return string Hot Water storage temperature bottom
+     * @throws ViessmannApiException
+     */
+    public
+    function getHotWaterStorageTemperatureBottom($circuitId = NULL): string
+    {
+        return $this->viessmannFeatureProxy->getEntity(ViessmannFeature::HEATING_DHW_SENSORS_TEMPERATURE_HOTWATERSTORAGE_BOTTOM)->getProperty("value")["value"];
     }
 
 
